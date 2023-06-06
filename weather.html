@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Techdev Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Sunday, 30 April
+                </div>
+                <div class="other" id="current-weather-items">
+                   
+                </div>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div class="country" id="country">India</div>
+            </div>
+        </div>
+    </div>
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div>
+                <div class="day">Mon</div>
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>   
+        </div>
+
+        <div class="weather-forecast" id="weather-forcast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thu</div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp"> day 45&#176;C</div>
+                <div class="temp"> night 30&#175;C</div>
+            </div>
+        </div>
+        <button onclick="getweatherdate()">click me</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
